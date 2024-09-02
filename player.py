@@ -13,12 +13,12 @@ from shot import Shot
 
 class Player(CircleShape):
     containers = (pygame.sprite.Group(), pygame.sprite.Group())
-    shoot_timer = 0
 
     def __init__(self, x, y):
         super().__init__(x, y, PLAYER_RADIUS)
         self.position = pygame.Vector2(x, y)
         self.rotation = 0
+        self.shoot_timer = 0
 
     # in the player class
     def triangle(self):
